@@ -5,9 +5,210 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FCFCFC;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Entire Site */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #3D3D3D;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background-color: #FF6161;
+}
+
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.logo {
+  width: 8rem;
+  cursor: pointer;
+}
+
+.logo:hover {
+  scale: 1.05;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer; 
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0,136,169,0.8);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  /* background-image: url("../../client/src/components/Columbus Street Map.jpg");
+  background-size: 70%;
+  background-repeat: no-repeat; */
+  opacity: 0;
+  animation: 3s forwards 1s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-3%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: .9;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.background-image {
+  position: absolute;
+  width: 70%;
+  opacity: .3;
+  z-index: -1;
+  mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.image-container {
+  width: 50%;
+  float: right;
+  bottom:0;
+  position: relative;
+}
+
+.text-container {
+  width: 50%;
+  float: left;
+  opacity: 0;
+  animation: 3s forwards 2s 1 slideInFromTop;
+  text-align: right;
+  margin-right: 5%;
+  position: relative;
+}
+
+.text-center {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+}
+
+#greeting {
+  font-size: 70px;
+}
+
+#brody {
+  color: #FF6161;
+}
+
+#occupation {
+  color: #8D8D8D; 
+}
+
+#location {
+  color: #BCBCBC;
+}
+
+ul.social-media-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.social-media-list li {
+  display: inline-block;
+}
+
+ul.social-media-list img {
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+ul.social-media-list img:hover {
+  scale: 1.2;
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+
+#download {
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+#headshot {
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  padding-right: 20%;
+  animation: 3s forwards 1s 1 slideInFromLeft;
+  filter: grayscale(100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 45%, rgba(0,0,0,0));
+  z-index: 10000;
+}
+
+#headshot:hover {
+  filter: grayscale(0%);
+
+}
+
+
