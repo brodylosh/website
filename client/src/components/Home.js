@@ -2,16 +2,16 @@ import { useState, useEffect } from 'react';
 import Header from './Header';
 // import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import background from './background.jpg';
-import headshot from './headshot.png';
+import background from '../media/background.jpg';
+import headshot from '../media/headshot.png';
 import { Icon } from '@iconify/react';
-import linkedin from './linkedin.png';
-import github from './github.png';
-import youtube from './youtube.png';
-import behance from './behance.png';
-import instagram from './instagram.png';
-import twitter from './twitter.png';
-import Resume from './resume.pdf';
+import linkedin from '../media/linkedin.png';
+import github from '../media/github.png';
+import youtube from '../media/youtube.png';
+import behance from '../media/behance.png';
+import instagram from '../media/instagram.png';
+import twitter from '../media/twitter.png';
+import Resume from '../media/resume.pdf';
 
 function Home() {
   const [show, setShow] = useState(false);
