@@ -1,5 +1,7 @@
-// import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './Header';
+// import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import background from './background.jpg';
 import headshot from './headshot.png';
 import { Icon } from '@iconify/react';
@@ -12,10 +14,33 @@ import twitter from './twitter.png';
 import Resume from './resume.pdf';
 
 function Home() {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, 5000);
+  }, []);
+
   return (
     <div className="home">
       <Header />
-      <div className="container">
+      <Modal show={show} size="lg" centered>
+        <Modal.Header>
+          <Modal.Title>⚠️ Site Under Construction ⚠️</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          This website is currently under construction. I appreciate your
+          patience as I work to make the site compatabile with different devices
+          & browsers. Updates will be made as they are developed. The site was
+          entirely designed and developed by Brody Losh, using custom CSS, and
+          no additonal UI Libraries. Thanks for visiting!
+        </Modal.Body>
+        <Modal.Footer>
+          <button onClick={() => setShow(false)}>Ok, Got It!</button>
+        </Modal.Footer>
+      </Modal>
+      <div className="content-container">
         <img className="background-image" src={background} />
         <div className="text-container">
           <div className="text-center">
