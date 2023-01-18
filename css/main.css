@@ -785,22 +785,6 @@ video {
   background-color: rgb(204 214 246 / var(--tw-bg-opacity));
 }
 
-.bg-background {
-  background-image: url('../img/background.png');
-}
-
-.bg-contain {
-  background-size: contain;
-}
-
-.bg-fixed {
-  background-attachment: fixed;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
-
 .fill-quaternary {
   fill: #ABABAB;
 }
@@ -963,7 +947,6 @@ body {
 @media screen and (max-width: 768px) {
   body {
     background: no-repeat fixed url("/img/background.png");
-    background-size: contain;
   }
 }
 
