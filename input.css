@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.background {
-    background-image: url("img/background.png");
+body {
+    background: no-repeat fixed url("/img/background.png");
+    background-size: 70%;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        background: no-repeat fixed url("/img/background.png");
+        background-size: contain;
+    }
+  }
 
 .hamburger {
     cursor: pointer;
