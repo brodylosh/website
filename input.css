@@ -19,7 +19,7 @@
 }
 
 @media (pointer: fine) and (max-width: 768px) {
-    .content {
+    body {
         background: no-repeat fixed url("/img/background.png");
         background-size: 100%;
     }
