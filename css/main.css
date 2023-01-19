@@ -939,14 +939,16 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-body {
-  background: no-repeat fixed url("/img/background.png");
-  background-size: 70%;
-}
-
 @media screen and (max-width: 768px) {
   body {
     background: no-repeat fixed url("/img/background.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: no-repeat fixed url("/img/background.png");
+    background-size: 70%;
   }
 }
 
