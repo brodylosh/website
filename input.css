@@ -18,14 +18,14 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (pointer: fine) and (max-width: 768px) {
     body {
         background: no-repeat fixed url("/img/background.png");
         background-size: 100%;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media (pointer: fine) and (min-width: 768px) {
     body {
         background: no-repeat fixed url("/img/background.png");
         background-size: 70%;
