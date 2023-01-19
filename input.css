@@ -19,7 +19,10 @@
 
 @supports (-webkit-overflow-scrolling: touch) {
     body {
+        background: url("/img/background.png");
         background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: 70%;
     }
   }
 
