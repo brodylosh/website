@@ -2,25 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (pointer: coarse) { 
+/* @media (pointer: coarse) { 
     body {
         background-attachment: initial;
     }
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) { */
     body {
-        background: no-repeat fixed url("/img/background.png");
-        background-size: 100%;
+        background: url("/img/background.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 70%;
     }
-}
+/* } */
 
-@media screen and (min-width: 768px) {
+@supports (-webkit-overflow-scrolling: touch) {
+    body {
+        background-attachment: scroll;
+    }
+  }
+
+/* @media screen and (min-width: 768px) {
     body {
         background: no-repeat fixed url("/img/background.png");
         background-size: 70%;
     }
-}
+} */
 
 .hamburger {
     cursor: pointer;
