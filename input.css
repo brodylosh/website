@@ -4,7 +4,8 @@
 
 @media (pointer: coarse) {
     .background {
-        background: url("/img/background.png");
+        /* background: url("/img/background.png"); */
+        background-color: aqua;
         background-repeat: no-repeat;
         height: 100vh;
         position: fixed;
