@@ -2,22 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (pointer: coarse) {
-    .background {
-        background: url("/img/background.png");
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        z-index: -1;
-    }
-    
-    body {
-        position: absolute;
-    }
-}
-
-
 @media screen and (max-width: 768px) {
     body {
         background: no-repeat fixed url("/img/background.png");
